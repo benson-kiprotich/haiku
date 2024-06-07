@@ -1,8 +1,14 @@
-import { countNumVowels } from '../src/haikuChecker';
+import { countNumDipthongs, countNumVowels } from '../src/haikuChecker';
 
 /* eslint-disable no-undef */
-describe('countNumVowels', () => {
+describe('count the number of vowels', () => {
   test('should return the correct number of vowels in a string', () => {
     expect(countNumVowels('test number of vowels')).toEqual(6);
+  });
+});
+
+describe('count the number of dipthongs', () => {
+  test('should return the correct number of dipthongs in a string', () => {
+    expect(countNumDipthongs('This boy loves raw meat')).toEqual(2);
   });
 });
