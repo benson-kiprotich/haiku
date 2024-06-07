@@ -24,3 +24,12 @@ export const countNumSilentVowels = (string) => {
     : 0;
   return silentA + silentE + anotherSilentE + silentU + oddSiltentI;
 };
+
+// Count syllables
+export const countNumSyllables = (string) => {
+  return (
+    countNumVowels(string) -
+    countNumDipthongs(string) -
+    countNumSilentVowels(string)
+  );
+};

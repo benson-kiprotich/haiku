@@ -1,6 +1,7 @@
 import {
   countNumDipthongs,
   countNumSilentVowels,
+  countNumSyllables,
   countNumVowels,
 } from '../src/haikuChecker';
 
@@ -20,5 +21,11 @@ describe('count the number of dipthongs', () => {
 describe('count the number of silent vowels', () => {
   test('should return the correct number of silent vowels in a string', () => {
     expect(countNumSilentVowels('guide drastically business fixed')).toEqual(5);
+  });
+});
+
+describe('count the number of syllables', () => {
+  test('should return the correct number of syllables in a string', () => {
+    expect(countNumSyllables('drastically business fixed')).toEqual(6);
   });
 });
