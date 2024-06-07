@@ -17,15 +17,12 @@ function handleHaikuForm() {
   const pTag1 = document.createElement('p');
   const pTag2 = document.createElement('p');
   const pTag3 = document.createElement('p');
+
   if (result) {
     header.append('You have a Haiku!');
     pTag1.append(input1);
     pTag2.append(input2);
     pTag3.append(input3);
-
-    document
-      .querySelector('#results-div')
-      .append(header, breakP, pTag1, pTag2, pTag3);
   } else {
     const Line1Count = countNumSyllables(input1);
     const Line2Count = countNumSyllables(input2);
@@ -35,10 +32,11 @@ function handleHaikuForm() {
     pTag1.append(`Line 1 is ${Line1Count} syllables, and should be 5.`);
     pTag2.append(`Line 2 is ${Line2Count} syllables, and should be 7.`);
     pTag3.append(`Line 3 is ${Line3Count} syllables, and should be 5.`);
-
-    document.querySelector('#results-div').show();
-    document.querySelector('#results-div');
   }
+
+  document
+    .querySelector('#results-div')
+    .append(header, breakP, pTag1, pTag2, pTag3);
 }
 
 window.addEventListener('load', () => {
