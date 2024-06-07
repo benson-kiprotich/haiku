@@ -18,6 +18,8 @@ function handleHaikuForm() {
   const pTag2 = document.createElement('p');
   const pTag3 = document.createElement('p');
 
+  document.querySelector('#results-div').style.display = 'block';
+
   if (result) {
     header.append('You have a Haiku!');
     pTag1.append(input1);
