@@ -6,6 +6,7 @@ import { checkIfHaiku, countNumSyllables } from './haikuChecker';
 
 function handleHaikuForm() {
   event.preventDefault();
+  document.querySelector('#results-div').innerText = null;
   const input1 = document.querySelector('#line1').value;
   const input2 = document.querySelector('#line2').value;
   const input3 = document.querySelector('#line3').value;
