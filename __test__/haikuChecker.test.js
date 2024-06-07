@@ -1,4 +1,5 @@
 import {
+  checkIfHaiku,
   countNumDipthongs,
   countNumSilentVowels,
   countNumSyllables,
@@ -27,5 +28,14 @@ describe('count the number of silent vowels', () => {
 describe('count the number of syllables', () => {
   test('should return the correct number of syllables in a string', () => {
     expect(countNumSyllables('drastically business fixed')).toEqual(6);
+  });
+});
+
+describe('check if the input is infact a Haiku', () => {
+  test('should return true or false depending on whether poem is a haiku', () => {
+    const line1 = 'An old silent pond';
+    const line2 = 'A frog jumps into a pond--';
+    const line3 = 'Splash! Silence again.';
+    expect(checkIfHaiku(line1, line2, line3)).toEqual(true);
   });
 });

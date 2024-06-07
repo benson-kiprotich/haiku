@@ -25,11 +25,23 @@ export const countNumSilentVowels = (string) => {
   return silentA + silentE + anotherSilentE + silentU + oddSiltentI;
 };
 
-// Count syllables
+// count the number of syllables
 export const countNumSyllables = (string) => {
   return (
     countNumVowels(string) -
     countNumDipthongs(string) -
     countNumSilentVowels(string)
+  );
+};
+
+// Check each line's syllables
+export const checkIfHaiku = (line1, line2, line3) => {
+  const line1SyllableCount = countNumSyllables(line1);
+  const line2SyllableCount = countNumSyllables(line2);
+  const line3SyllableCount = countNumSyllables(line3);
+  return (
+    line1SyllableCount === 5 &&
+    line2SyllableCount === 7 &&
+    line3SyllableCount === 5
   );
 };
