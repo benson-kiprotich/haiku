@@ -45,7 +45,7 @@ _There are no known bugs at this time._
 
 ## Support and contact details
 
-If you find a bug or have questions, ideas or concerns, kindly open an issue [here](https://github.com/benson-kiprotich/akan-names/issues/new) and share the concerns.
+If you find a bug or have questions, ideas or concerns, kindly open an issue [here](https://github.com/benson-kiprotich/haiku/issues/new) and share the concerns.
 
 ### License
 
