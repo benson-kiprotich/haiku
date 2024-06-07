@@ -50,4 +50,4 @@ If you find a bug or have questions, ideas or concerns, kindly open an issue [he
 ### License
 
 _MIT_
-Copyright (c) {year} **Benson Limo**
+Copyright (c) 2024 **Benson Limo**
